@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупателям - Каскад-Агро</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="partners.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-inner">
+                    <div class="header-contacts">
+                        <a href="tel:+79493208999">+7 (949) 320-89-99</a>
+                        <a href="tel:+79493201317">+7 (949) 320-13-17</a>
+                        <a href="mailto:kkxp@mail.ru">kkxp@mail.ru</a>
+                    </div>
+                    <p>ПН-ВС 8:00-16:30 | Без выходных</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-inner">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">К</div>
+                        <div class="logo-text">КАСКАД<span>-АГРО</span></div>
+                    </a>
+                    <nav>
+                        <a href="index.html">Главная</a>
+                        <!-- <a href="index.html#products">Продукция</a> -->
+                        <a href="partners.html" class="active">Покупателям</a>
+                        <a href="delivery.html">Доставка</a>
+                        <a href="contacts.html">Контакты</a>
+                    </nav>
+                    <div class="header-actions">
+                        <button class="btn btn-primary" onclick="openSavedProducts()">Избранное</button>
+                        <a href="contacts.html#feedback" class="btn btn-secondary">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Покупателям</h1>
+            <p>Условия сотрудничества с юридическими лицами и дилерами</p>
+        </div>
+    </section>
+
+    <section class="buyers-intro">
+        <div class="container">
+            <div class="intro-box">
+                <p>Мы предлагаем выгодные условия сотрудничества для юридических организаций, фермеров и дилеров. Ознакомьтесь с условиями и свяжитесь с нашим коммерческим отделом.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="buyers-organizations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Юридическим организациям и фермерам</h2>
+                <p>В вас мы видим хозяев животноводческих комплексов, птицефабрик, рыбных хозяйств</p>
+            </div>
+
+            <div class="order-steps">
+                <h3>Порядок сотрудничества</h3>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Согласование рецепта</h4>
+                            <p>Определяем состав комбикорма под ваши требования</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Заключение договора</h4>
+                            <p>Оформляем официальный договор сотрудничества</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>План поставок</h4>
+                            <p>Составляем график и объёмы поставок</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Завоз сырья</h4>
+                            <p>Определяем график завоза сырья (давальческая схема)</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Производственная группа</h4>
+                            <p>Назначаем ответственных лиц для решения вопросов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-conditions">
+                <h3>Условия</h3>
+                <ul class="conditions-list">
+                    <li>
+                        <span class="condition-icon">&#10003;</span>
+                        <div>
+                            <strong>Минимальный заказ индивидуального рецепта:</strong> не менее 4 тонн
+                        </div>
+                    </li>
+                    <li>
+                        <span class="condition-icon">&#10003;</span>
+                        <div>
+                            <strong>Цены:</strong> актуальные цены смотрите в разделе <a href="#">Прайс-лист</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="condition-icon">&#10003;</span>
+                        <div>
+                            <strong>Давальческая схема:</strong> комбикорм не фасуется в упаковку «Каскад-Агро». Заказчик поставляет собственную упаковку
+                        </div>
+                    </li>
+                    <li>
+                        <span class="condition-icon">&#10003;</span>
+                        <div>
+                            <strong>Ответственность:</strong> при изготовлении по индивидуальному рецепту мы не несем ответственности за результат применения
+                        </div>
+                    </li>
+                    <li>
+                        <span class="condition-icon">&#10003;</span>
+                        <div>
+                            <strong>Транспорт:</strong> ООО «Фирма «Каскад-Агро» предоставляет транспортные услуги
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="dealers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Дилерам</h2>
+                <p>ООО «Каскад-Агро» чрезвычайно заинтересовано в развитии дилерской сети</p>
+            </div>
+
+            <div class="dealers-intro">
+                <p>Мы предлагаем сотрудничество всем желающим и просим внимательно изучить принципы организации дилерской сети «Каскад-Агро».</p>
+            </div>
+
+            <div class="dealers-principles">
+                <h3>Принципы организации дилерской сети</h3>
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <div class="principle-number">1</div>
+                        <div class="principle-content">
+                            <h4>Материальная поддержка</h4>
+                            <p>Организация снабжает дилера материалами, способствующими распространению товара, обеспечивает документами, требуемыми законодательством ДНР</p>
+                        </div>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-number">2</div>
+                        <div class="principle-content">
+                            <h4>Договорные отношения</h4>
+                            <p>Работа организуется на основании заключенного договора</p>
+                        </div>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-number">3</div>
+                        <div class="principle-content">
+                            <h4>Срочный характер</h4>
+                            <p>Договор имеет срочный характер</p>
+                        </div>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-number">4</div>
+                        <div class="principle-content">
+                            <h4>Территориальные ограничения</h4>
+                            <p>Договор ограничивает коммерческую деятельность дилера за пределами оговоренной территории (области)</p>
+                        </div>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-number">5</div>
+                        <div class="principle-content">
+                            <h4>Выкуп продукции</h4>
+                            <p>Дилер выкупает продукцию и затем использует её для реализации</p>
+                        </div>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-number">6</div>
+                        <div class="principle-content">
+                            <h4>Единые цены</h4>
+                            <p>Цены на продукцию завода едины для всех покупателей и не зависят от каких-либо условий</p>
+                        </div>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-number">7</div>
+                        <div class="principle-content">
+                            <h4>Конфиденциальность</h4>
+                            <p>Интерес дилера оговаривается договором при переговорах и не подлежит огласке. Бартерные формы сотрудничества не рассматриваются</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="storage-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Услуги по хранению зерна</h2>
+            </div>
+            <div class="storage-content">
+                <p>ООО «Каскад-Агро» также оказывает услуги по хранению зерна на элеваторе.</p>
+                <p class="storage-note">Цены на услуги согласовываются индивидуально с коммерческим отделом. Свяжитесь с нами для получения подробной информации.</p>
+                <a href="contacts.html" class="btn btn-primary">Связаться с коммерческим отделом</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="buyers-cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Начните сотрудничество</h2>
+                <p>Оставьте заявку, и наши специалисты свяжутся с вами для обсуждения условий</p>
+                <a href="contacts.html#feedback" class="btn btn-secondary">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">К</div>
+                        <div class="logo-text">КАСКАД<span>-АГРО</span></div>
+                    </a>
+                    <p>ООО «Фирма «Каскад-Агро» - производитель качественных комбикормов для сельскохозяйственных животных и птицы.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="index.html#products">Продукция</a></li>
+                        <li><a href="delivery.html">Доставка</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="partners.html">Покупателям</a></li>
+                        <li><a href="#">Сертификаты</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <p>287321, РФ, ДНР</p>
+                    <p>пгт. Кутейниково</p>
+                    <p>ул. Лермонтова, 1</p>
+                    <p>+7 (949) 320-89-99</p>
+                    <p>kkxp@mail.ru</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ООО Фирма «Каскад-Агро». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="savedModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Избранные товары</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div id="savedProductsList"></div>
+            <button class="clear-btn" onclick="clearSavedProducts()">Очистить избранное</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
