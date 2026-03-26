@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О нас - Каскад-Агро</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
     <header>
@@ -26,20 +26,21 @@
             <div class="container">
                 <div class="header-main-inner">
                     <a href="index.html" class="logo">
-                        <div class="logo-icon">К</div>
+                        <div class="logo-icon">
+                            <img src="images/logo.png" alt="Каскад-Агро">
+                        </div>
                         <div class="logo-text">КАСКАД<span>-АГРО</span></div>
                     </a>
                     <nav>
                         <a href="index.html">Главная</a>
-                        <!-- <a href="index.html#products">Продукция</a> -->
-                        <a href="partners.html">Покупателям</a>
-                        <a href="delivery.html">Доставка</a>
-                        <a href="contacts.html">Контакты</a>
                         <a href="about.html" class="active">О нас</a>
+                        <a href="delivery.html">Доставка</a>
+                        <a href="partners.html">Покупателям</a>
+                        <a href="contacts.html">Контакты</a>
                     </nav>
                     <div class="header-actions">
                         <button class="btn btn-primary" onclick="openSavedProducts()">Избранное</button>
-                        <a href="contacts.html#feedback" class="btn btn-secondary">Заказать звонок</a>
+                        <a href="contacts.html" class="btn btn-secondary">Заказать звонок</a>
                     </div>
                 </div>
             </div>
@@ -67,25 +68,19 @@
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <div class="gallery-image" style="background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);">
-                        <svg viewBox="0 0 24 24" fill="currentColor" style="width:80px;height:80px;color:rgba(255,255,255,0.3)">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-                        </svg>
+                        <img src="images/img-1.jpg" alt="">
                     </div>
                     <div class="gallery-caption">Производственные цеха</div>
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image" style="background: linear-gradient(135deg, #FF8F00 0%, #FF6F00 100%);">
-                        <svg viewBox="0 0 24 24" fill="currentColor" style="width:80px;height:80px;color:rgba(255,255,255,0.3)">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-                        </svg>
+                        <img src="images/img-2.jpg" alt="">
                     </div>
                     <div class="gallery-caption">Лаборатория контроля качества</div>
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image" style="background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);">
-                        <svg viewBox="0 0 24 24" fill="currentColor" style="width:80px;height:80px;color:rgba(255,255,255,0.3)">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-                        </svg>
+                        <img src="images/img-3.webp" alt="">
                     </div>
                     <div class="gallery-caption">Склад готовой продукции</div>
                 </div>
@@ -163,42 +158,54 @@
             </div>
             <div class="products-list">
                 <div class="product-item">
-                    <div class="product-icon">&#128038;</div>
+                    <div class="product-icon">
+                        <img src="images/birds.jpeg" alt="Птица" style="border-radius: 50%;">
+                    </div>
                     <div class="product-text">
                         <h3>Комбикорма для птицы</h3>
                         <p>Куры-несушки, бройлеры, индейки, перепела</p>
                     </div>
                 </div>
                 <div class="product-item">
-                    <div class="product-icon">&#128022;</div>
+                    <div class="product-icon">
+                        <img src="images/pig.png" alt="" style="border-radius: 50%;">
+                    </div>
                     <div class="product-text">
                         <h3>Комбикорма для свиней</h3>
                         <p>Поросята, откорм свиней, свиноматки</p>
                     </div>
                 </div>
                 <div class="product-item">
-                    <div class="product-icon">&#128004;</div>
+                    <div class="product-icon">
+                        <img src="images/cow.png" alt="" style="border-radius: 50%;">
+                    </div>
                     <div class="product-text">
                         <h3>Комбикорма для КРС</h3>
                         <p>Крупный рогатый скот, молочное направление</p>
                     </div>
                 </div>
                 <div class="product-item">
-                    <div class="product-icon">&#128063;</div>
+                    <div class="product-icon">
+                        <img src="images/rebbit.png" alt="" style="border-radius: 50%;">
+                    </div>
                     <div class="product-text">
                         <h3>Комбикорма для кроликов</h3>
                         <p>Взрослые кролики, молодняк</p>
                     </div>
                 </div>
                 <div class="product-item">
-                    <div class="product-icon">&#128032;</div>
+                    <div class="product-icon">
+                        <img src="images/fish.png" alt="" style="border-radius: 50%;">
+                    </div>
                     <div class="product-text">
                         <h3>Комбикорма для рыб</h3>
                         <p>Карп, осетр, форель</p>
                     </div>
                 </div>
                 <div class="product-item">
-                    <div class="product-icon">&#129440;</div>
+                    <div class="product-icon">
+                        <img src="images/vitamin.png" alt="" style="border-radius: 50%;">
+                    </div>
                     <div class="product-text">
                         <h3>БВД и БВМД</h3>
                         <p>Белково-витаминные добавки различного назначения</p>
@@ -239,16 +246,18 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <a href="index.html" class="logo">
-                        <div class="logo-icon">К</div>
-                        <div class="logo-text">КАСКАД<span>-АГРО</span></div>
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <img src="images/logo.png" alt="Каскад-Агро">
+                        </div>
+                        <div class="logo-text">КАСКАД<span style="color: #fff;">-АГРО</span></div>
                     </a>
                     <p>ООО «Фирма «Каскад-Агро» - производитель качественных комбикормов для сельскохозяйственных животных и птицы. Работаем на рынке более 15 лет.</p>
                 </div>
                 <div class="footer-nav">
                     <h4>Навигация</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О компании</a></li>
                         <li><a href="index.html#products">Продукция</a></li>
                         <li><a href="delivery.html">Доставка</a></li>
                         <li><a href="contacts.html">Контакты</a></li>

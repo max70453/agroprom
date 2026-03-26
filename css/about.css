@@ -1,0 +1,381 @@
+/* Page Hero */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    padding: 150px 0 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+}
+
+.page-hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.page-hero p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.9);
+    position: relative;
+}
+
+/* About Intro */
+.about-intro {
+    padding: 30px 0;
+    background: var(--white);
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.about-content .lead {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+/* About Gallery */
+.about-gallery {
+    padding: 20px 0;
+    background: var(--light);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gallery-item {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.gallery-image {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-caption {
+    padding: 20px;
+    background: var(--white);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+/* About Production */
+.about-production {
+    padding: 20px 0;
+    background: var(--white);
+}
+
+.production-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.production-card {
+    padding: 15px;
+    background: var(--light);
+    border-radius: var(--radius);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.production-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+}
+
+.production-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.production-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.production-card p {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* About Lab */
+.about-lab {
+    padding: 20px 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.lab-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 60px;
+    align-items: center;
+}
+
+.lab-text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.lab-text p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.lab-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lab-list li {
+    font-size: 15px;
+    color: rgba(255,255,255,0.9);
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.lab-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.lab-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+/* About Products */
+.about-products {
+    padding: 20px 0;
+    background: var(--light);
+}
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.product-item:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow);
+}
+
+.product-icon {
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    background: var(--light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.product-text h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+.product-text p {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* About Awards */
+.about-awards {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.award-card {
+    background: var(--light);
+    border-radius: var(--radius);
+    padding: 30px;
+    text-align: center;
+    transition: var(--transition);
+    border-left: 4px solid var(--secondary);
+}
+
+.award-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+}
+
+.award-year {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 15px;
+}
+
+.award-content h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.award-content p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* About Info */
+.about-info {
+    padding: 20px 0;
+    background: var(--light);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.info-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--primary);
+}
+
+.info-content p {
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.info-content strong {
+    color: var(--dark);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .production-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lab-content {
+        grid-template-columns: 1fr;
+    }
+    .lab-image {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .products-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero h1 {
+        font-size: 36px;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .production-grid {
+        grid-template-columns: 1fr;
+    }
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}

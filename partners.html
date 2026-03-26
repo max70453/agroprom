@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Покупателям - Каскад-Агро</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="partners.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/partners.css">
 </head>
 <body>
     <header>
@@ -26,19 +26,21 @@
             <div class="container">
                 <div class="header-main-inner">
                     <a href="index.html" class="logo">
-                        <div class="logo-icon">К</div>
+                        <div class="logo-icon">
+                            <img src="images/logo.png" alt="Каскад-Агро">
+                        </div>
                         <div class="logo-text">КАСКАД<span>-АГРО</span></div>
                     </a>
                     <nav>
                         <a href="index.html">Главная</a>
-                        <!-- <a href="index.html#products">Продукция</a> -->
-                        <a href="partners.html" class="active">Покупателям</a>
+                        <a href="about.html">О нас</a>
                         <a href="delivery.html">Доставка</a>
+                        <a href="partners.html" class="active">Покупателям</a>
                         <a href="contacts.html">Контакты</a>
                     </nav>
                     <div class="header-actions">
                         <button class="btn btn-primary" onclick="openSavedProducts()">Избранное</button>
-                        <a href="contacts.html#feedback" class="btn btn-secondary">Заказать звонок</a>
+                        <a href="contacts.html" class="btn btn-secondary">Заказать звонок</a>
                     </div>
                 </div>
             </div>
@@ -237,15 +239,17 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="contacts">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <a href="index.html" class="logo">
-                        <div class="logo-icon">К</div>
-                        <div class="logo-text">КАСКАД<span>-АГРО</span></div>
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <img src="images/logo.png" alt="Каскад-Агро">
+                        </div>
+                        <div class="logo-text">КАСКАД<span style="color: #fff;">-АГРО</span></div>
                     </a>
-                    <p>ООО «Фирма «Каскад-Агро» - производитель качественных комбикормов для сельскохозяйственных животных и птицы.</p>
+                    <p>ООО «Фирма «Каскад-Агро» - производитель качественных комбикормов для сельскохозяйственных животных и птицы. Работаем на рынке более 15 лет.</p>
                 </div>
                 <div class="footer-nav">
                     <h4>Навигация</h4>
@@ -270,6 +274,7 @@
                     <p>пгт. Кутейниково</p>
                     <p>ул. Лермонтова, 1</p>
                     <p>+7 (949) 320-89-99</p>
+                    <p>+7 (949) 320-13-17</p>
                     <p>kkxp@mail.ru</p>
                 </div>
             </div>

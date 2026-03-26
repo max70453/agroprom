@@ -1,23 +1,24 @@
 const products = [
     { 
         id: 1, 
+        image: 'images/bag.png',
         name: 'ПК 1-18 Куры несушки от 16 недель', 
         category: 'birds', 
         price: 900, 
         unit: 'мешок',
         description: 'Полнорационный комбикорм для кур-несушек' 
     },
-    { id: 2, name: 'ПК 3-4 Молодняк кур несушек 9-17 недель', category: 'birds', price: 830, unit: 'мешок', description: 'Комбикорм для молодняка кур-несушек' },
-    { id: 3, name: 'ПК 2-6 Молодняк кур-несушек 1-8 недель', category: 'birds', price: 1100, unit: 'мешок', description: 'Стартовый комбикорм для цыплят' },
-    { id: 4, name: 'ПК 5-4 Бройлеры 1-3 недели (Старт)', category: 'birds', price: 1250, unit: 'мешок', description: 'Стартовый комбикорм для бройлеров' },
-    { id: 5, name: 'ПК 6-6 Бройлеры 4-5 недель (Откорм)', category: 'birds', price: 1200, unit: 'мешок', description: 'Комбикорм для откорма бройлеров' },
-    { id: 6, name: 'ПК 6-7 Бройлеры от 6 недель (Финиш)', category: 'birds', price: 1100, unit: 'мешок', description: 'Финишный комбикорм для бройлеров' },
-    { id: 7, name: 'ПК-50 Поросята сосуны до 2-х месяцев', category: 'pigs', price: 1000, unit: 'мешок', description: 'Комбикорм для поросят-сосунов' },
-    { id: 8, name: 'ПК-55 Мясной откорм свиней', category: 'pigs', price: 800, unit: 'мешок', description: 'Комбикорм для откорма свиней' },
-    { id: 9, name: 'ПК 91 Для взрослых кроликов', category: 'rabbits', price: 760, unit: 'мешок', description: 'Полнорационный комбикорм для кроликов' },
-    { id: 10, name: 'ПК 1-24 Перепела от 7 недель и старше', category: 'quail', price: 1050, unit: 'мешок', description: 'Комбикорм для перепелов' },
-    { id: 11, name: 'ПК 11-1 Молодняк индейки 1-8 недель', category: 'turkey', price: 1400, unit: 'мешок', description: 'Стартовый комбикорм для индеек' },
-    { id: 12, name: 'Комбикорм для КРС', category: 'cattle', price: 850, unit: 'мешок', description: 'Полнорационный комбикорм для КРС' },
+    { id: 2, image: 'images/bag.png', name: 'ПК 3-4 Молодняк кур несушек 9-17 недель', category: 'birds', price: 830, unit: 'мешок', description: 'Комбикорм для молодняка кур-несушек' },
+    { id: 3, image: 'images/bag.png', name: 'ПК 2-6 Молодняк кур-несушек 1-8 недель', category: 'birds', price: 1100, unit: 'мешок', description: 'Стартовый комбикорм для цыплят' },
+    { id: 4, image: 'images/bag.png', name: 'ПК 5-4 Бройлеры 1-3 недели (Старт)', category: 'birds', price: 1250, unit: 'мешок', description: 'Стартовый комбикорм для бройлеров' },
+    { id: 5, image: 'images/bag.png', name: 'ПК 6-6 Бройлеры 4-5 недель (Откорм)', category: 'birds', price: 1200, unit: 'мешок', description: 'Комбикорм для откорма бройлеров' },
+    { id: 6, image: 'images/bag.png', name: 'ПК 6-7 Бройлеры от 6 недель (Финиш)', category: 'birds', price: 1100, unit: 'мешок', description: 'Финишный комбикорм для бройлеров' },
+    { id: 7, image: 'images/bag.png', name: 'ПК-50 Поросята сосуны до 2-х месяцев', category: 'pigs', price: 1000, unit: 'мешок', description: 'Комбикорм для поросят-сосунов' },
+    { id: 8, image: 'images/bag.png', name: 'ПК-55 Мясной откорм свиней', category: 'pigs', price: 800, unit: 'мешок', description: 'Комбикорм для откорма свиней' },
+    { id: 9, image: 'images/bag.png', name: 'ПК 91 Для взрослых кроликов', category: 'rabbits', price: 760, unit: 'мешок', description: 'Полнорационный комбикорм для кроликов' },
+    { id: 10, image: 'images/bag.png', name: 'ПК 1-24 Перепела от 7 недель и старше', category: 'quail', price: 1050, unit: 'мешок', description: 'Комбикорм для перепелов' },
+    { id: 11, image: 'images/bag.png', name: 'ПК 11-1 Молодняк индейки 1-8 недель', category: 'turkey', price: 1400, unit: 'мешок', description: 'Стартовый комбикорм для индеек' },
+    { id: 12, image: 'images/bag.png', name: 'Комбикорм для КРС', category: 'cattle', price: 850, unit: 'мешок', description: 'Полнорационный комбикорм для КРС' },
 ];
 
 const STORAGE_KEY = 'kaskad_saved_products';
@@ -31,9 +32,7 @@ function renderProducts(filter = 'all') {
     grid.innerHTML = filtered.map(p => `
         <div class="product-card">
             <div class="product-image">
-                <svg viewBox="0 0 24 24" fill="currentColor" style="width:80px;height:80px;color:#4CAF50">
-                    <path d="M20 6H17.82C17.4 4.84 16.3 4 15 4c-1.66 0-3 1.34-3 3 0 .57.2 1.13.58 1.5L9.5 11 6 8c-.65-.65-1.5-1-2.5-1-1.65 0-3 1.35-3 3v1h13v2h2V6zm-4 8h-2v2h-2v-2h-2v-2h2v-2h2v2h2v2z"/>
-                </svg>
+                <img src="${p.image}" alt="${p.name}" />
             </div>
             <div class="product-info">
                 <h3>${p.name}</h3>
